@@ -5,27 +5,30 @@
 ###第1步: 
 将表达式中的每个元素保存到链表中存储, 并且简单的处理负数
 如: -4+(-12+25)*(-30) 到list中之后: 
-        node1:  (
-        node2:  0
-        node3:  -
-        node4:  4
-        node5:  )
-        node6:  +
-        node7:  (
-        node8:  0
-        node9:  -
-        node10: 12
-        node11: +
-        node12: 25
-        node13: )
-        node14: *
-        node15: (
-        node16: 0
-        node17: -
-        node18: 30
-        node19: )
+
+    node1:  (
+    node2:  0
+    node3:  -
+    node4:  4
+    node5:  )
+    node6:  +
+    node7:  (
+    node8:  0
+    node9:  -
+    node10: 12
+    node11: +
+    node12: 25
+    node13: )
+    node14: *
+    node15: (
+    node16: 0
+    node17: -
+    node18: 30
+    node19: )
+    
 ###第2步: 利用递归下降的方法把表达式转换为具有优先级的表达式树. 
 上面的式子转换之后的数据结构为:
+
               +
           /      \
          -        *
