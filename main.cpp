@@ -34,7 +34,7 @@ int main()
 	initBuf();
 	TreeNode *root = parse_exp();
 	post_traverseTree(root);
-	cout << stk.top();
+	cout << stk.top()<<endl;
 
 	return 0;
 }
